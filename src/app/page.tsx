@@ -48,8 +48,8 @@ export default function FeedbackApp() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
-      <div className="w-full max-w-[320px] mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden h-[640px] border border-gray-200">
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+      <div className="w-full max-w-[360px] mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden h-[740px] border border-gray-200">
         {currentStep === 1 && <RatingStep data={feedbackData} onUpdate={updateFeedbackData} onNext={nextStep} />}
         {currentStep === 2 && (
           <PhotoUploadStep data={feedbackData} onUpdate={updateFeedbackData} onNext={nextStep} onBack={prevStep} />
